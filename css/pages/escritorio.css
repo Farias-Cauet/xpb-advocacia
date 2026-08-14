@@ -1,0 +1,92 @@
+/* ===== SOBRE ===== */
+.sobre { padding: 100px 0; }
+
+.sobre-inner {
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  gap: 64px;
+  align-items: start;
+}
+
+.sobre-media img {
+  width: 100%;
+  height: 750px;
+  object-fit: cover;
+  border-radius: var(--radius);
+  filter: grayscale(15%);
+}
+
+.sobre-content p {
+  color: var(--tinta-soft);
+  margin-bottom: 16px;
+  max-width: 56ch;
+  text-align: justify;
+}
+
+.sobre-stats {
+  display: flex;
+  gap: 40px;
+  margin-top: 36px;
+  padding-top: 32px;
+  border-top: 1px solid var(--linha);
+}
+.stat { display: flex; flex-direction: column; }
+.stat-num {
+  font-family: var(--font-display);
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--verde);
+}
+.stat-label {
+  font-size: 0.8rem;
+  color: var(--tinta-soft);
+}
+
+/* ===== DIFERENCIAIS ===== */
+.diferenciais {
+  padding: 100px 0;
+  background: var(--tinta);
+  color: var(--papel);
+}
+.diferenciais .section-eyebrow { color: var(--latao); }
+.diferenciais .section-title { color: var(--branco); }
+
+.dif-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+}
+.dif-item h3 {
+  color: var(--branco);
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+.dif-item p {
+  color: #B8BDC9;
+  font-size: 0.9rem;
+}
+
+/* ===== CTA BANNER ===== */
+.cta-banner {
+  background: var(--branco);
+  padding: 90px 0;
+  border-bottom: 1px solid var(--linha);
+}
+.cta-banner-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+.cta-banner-inner p { color: var(--tinta-soft); max-width: 40ch; }
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 900px) {
+  .sobre-inner { grid-template-columns: 1fr; }
+  .dif-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 560px) {
+  .dif-grid { grid-template-columns: 1fr; }
+}

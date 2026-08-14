@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato | Xavier, Peres & Batista Advocacia</title>
+    <meta name="description" content="Fale com o Xavier, Peres & Batista Advocacia. Consulta inicial sem compromisso — respondemos em até 24h úteis.">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../css/base.css">
+        <link rel="stylesheet" href="../css/pages/contato.css">
+</head>
+<body>
+
+<div class="paper-texture" aria-hidden="true"></div>
+
+<!-- HEADER -->
+<header class="site-header" id="header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo">
+      <span class="logo-mark">XPB</span>
+      <span class="logo-text">Xavier, Peres &amp; Batista<br><small>Advocacia</small></span>
+    </a>
+
+    <nav class="main-nav" id="main-nav">
+      <a href="index.html">Início</a>
+      <a href="escritorio.html">Escritório</a>
+      <a href="areas.html">Áreas de Atuação</a>
+      <a href="equipe.html">Equipe</a>
+      <a href="contato.html" class="is-active">Contato</a>
+    </nav>
+
+    <a href="contato.html" class="btn btn-primary nav-cta">Agendar Consulta</a>
+
+    <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- PAGE HEADER -->
+<section class="page-header">
+  <div class="container">
+    <p class="section-eyebrow">Contato</p>
+    <h1 class="section-title">Vamos conversar sobre o seu caso</h1>
+    <p>Preencha o formulário abaixo ou fale diretamente pelos canais ao lado. A consulta inicial não tem compromisso.</p>
+  </div>
+</section>
+
+<!-- CONTATO -->
+<section class="contato">
+  <div class="container contato-inner">
+    <div class="contato-info">
+      <ul class="contato-list">
+        <li><strong>Telefone</strong><span>(11) 4002-8922</span></li>
+        <li><strong>E-mail</strong><span>contato@xpb.adv.br</span></li>
+        <li><strong>Endereço</strong><span>Av. Paulista, 1374 — São Paulo, SP</span></li>
+        <li><strong>OAB/SP</strong><span>Sociedade de Advogados nº 4821</span></li>
+        <li><strong>Horário</strong><span>Seg. a sex., 9h às 18h</span></li>
+      </ul>
+    </div>
+
+    <form name="contato" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="contato-form" id="contato-form">
+      <input type="hidden" name="form-name" value="contato">
+      <p class="hidden-field"><label>Não preencha este campo: <input name="bot-field"></label></p>
+
+      <div class="form-row">
+        <label for="nome">Nome</label>
+        <input type="text" id="nome" name="nome" required>
+      </div>
+
+      <div class="form-row">
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+
+      <div class="form-row">
+        <label for="telefone">Telefone</label>
+        <input type="tel" id="telefone" name="telefone">
+      </div>
+
+      <div class="form-row">
+        <label for="area">Área de interesse</label>
+        <select id="area" name="area">
+          <option value="trabalhista">Direito Trabalhista</option>
+          <option value="empresarial">Direito Empresarial</option>
+          <option value="contratos">Contratos</option>
+          <option value="consultoria">Consultoria Preventiva</option>
+        </select>
+      </div>
+
+      <div class="form-row">
+        <label for="mensagem">Mensagem</label>
+        <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+      </div>
+
+      <button type="submit" class="btn btn-primary form-submit">Enviar mensagem</button>
+      <p class="form-status" id="form-status" role="status"></p>
+    </form>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <a href="index.html" class="footer-brand">
+      <span class="logo-mark">XPB</span>
+      <span>Xavier, Peres &amp; Batista Advocacia</span>
+    </a>
+    <p class="footer-note">Sociedade de Advogados — OAB/SP nº 4821. Este é um site de portfólio fictício, desenvolvido para fins de demonstração.</p>
+    <p class="footer-copy">&copy; 2026 Xavier, Peres &amp; Batista. Todos os direitos reservados.</p>
+  </div>
+</footer>
+
+<script src="../js/script.js"></script>
+</body>
+</html>
